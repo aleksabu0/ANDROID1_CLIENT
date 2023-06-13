@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tx1"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ServerIP" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="196dp"
+        android:text="@string/Connect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="340dp"
+        android:text="@string/Choose"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tx2"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ServerPort" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tx3"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="100dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Username" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ListView
+        android:id="@+id/single_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="100dp"
+        android:divider="@color/black"
+        android:dividerHeight="2dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ListView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/popup"
+        android:layout_width="328dp"
+        android:layout_height="208dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="300dp"
+        android:background="#62def8"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonReject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="150dp"
+            android:text="Reject"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textPopup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="This is a popup window."
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="150dp"
+            android:text="Accept"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/popupBlock"
+        android:layout_width="328dp"
+        android:layout_height="208dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="300dp"
+        android:background="#62def8"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textPopupBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="Waiting for other player"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

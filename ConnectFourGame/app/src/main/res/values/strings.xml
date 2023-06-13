@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ConnectFourGame</string>
+    <string name="Connect">Connect</string>
+    <string name="Choose">Choose</string>
+    <string name="ServerIP">Server IP</string>
+    <string name="ServerPort">Server Port</string>
+    <string name="Username">Username</string>
+    <string name="Potez1">Your Turn</string>
+    <string name="Potez2">Other players turn</string>
+    <string name="NotYourTurn">Not your turn!</string>
+</resources>
